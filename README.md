@@ -8,10 +8,10 @@ in these posts are solely my own and do not express the views nor opinions of my
 employer.
 
 Other places you can find me online:
- - https://devblogs.microsoft.com/cppblog/author/carsonradtke/
- - https://nosrac.me
- - https://linkedin.com/in/carsonradtke
- - https://github.com/carsonradtke
+ - [https://devblogs.microsoft.com/cppblog/author/carsonradtke/]()
+ - [https://nosrac.me]()
+ - [https://linkedin.com/in/carsonradtke]()
+ - [https://github.com/carsonradtke]()
 
 ### 2025
 
