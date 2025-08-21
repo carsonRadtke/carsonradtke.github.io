@@ -3,13 +3,13 @@
 import subprocess
 import sys
 
-sp = subprocess.Popen(sys.argv[1:], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+proc = subprocess.Popen(sys.argv[1:], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 stdout, stderr = [], []
-while sp.poll() is None:
-    if stdout_chunk := sp.stdout.readline():
+while proc.poll() is None:
+    if stdout_chunk := proc.stdout.readline():
         stdout.append(stdout_chunk.decode("utf-8"))
-    if stderr_chunk := sp.stderr.readline():
+    if stderr_chunk := proc.stderr.readline():
         stderr.append(stderr_chunk.decode("utf-8"))
 
 open("stdout.txt", "w").write("".join(stdout))

@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Write "." to stderr a whole bunch of times. Controlled the command line argument.
 int main(int argc, const char *argv[]) {
   if (argc != 2)
     return 1;
