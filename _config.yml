@@ -1,0 +1,36 @@
+# Site settings
+title: carsonradtke.github.io
+author:
+  name: Carson Radtke
+  email: nosrac925@gmail.com
+description: >-
+  The views and opinions expressed here are entirely my own and do not reflect the official policy or position of my employer.
+
+# Build settings
+remote_theme: jekyll/minima
+plugins:
+  # Necessary for minima:
+  - jekyll-feed
+  - jekyll-seo-tag
+  # Necessary for remote_theme:
+  - jekyll-remote-theme
+saas:
+  quiet_deps: true
+  silence_deprecations: [import]
+
+# Minima settings
+minima:
+  skin: auto
+  nav_pages:
+    - about.markdown
+  show_excerpts: true
+  date_format: "%b %d, %Y"
+  social_links:
+    - title: GitHub | @carsonRadtke
+      icon: github
+      url: "https://github.com/carsonradtke"
+    - title: LinkedIn | @carsonradtke
+      icon: linkedin
+      url: "https://linkedin.com/in/carsonradtke"
+  hide_site_feed_link: true
+
