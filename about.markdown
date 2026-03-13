@@ -14,4 +14,3 @@ Other places you can find me online:
 - Microsoft C++ Developer Blog: [Carson Radtke](https://devblogs.microsoft.com/cppblog/author/carsonradtke/)
 - Personal Website: [nosrac.me](https://nosrac.me)
 
-[GPG Key]({{ site.url }}/carsonradtke-public-key.asc)
