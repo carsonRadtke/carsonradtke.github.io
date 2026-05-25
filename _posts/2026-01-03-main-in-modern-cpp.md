@@ -102,10 +102,10 @@ auto main(int argc, const char* argv[]) -> int {
 ```
 <details markdown="1">
 <summary>Details</summary>
-[✅ godbolt](https://godbolt.org/z/5Kbh7Gsdb)
+[✅ godbolt](https://godbolt.org/z/eTxae1P6K)
 ```c++
 #include <algorithm>
-#include <range>
+#include <ranges>
 #include <span>
 #include <string_view>
 #include <vector>
@@ -114,7 +114,7 @@ auto run(std::span<std::string_view> args) -> int;
 
 auto main(int argc, const char* argv[]) -> int {
    auto args = 
-        std::span(argv, argc) |
+        std::span(argv, static_cast<std::size_t>(argc)) |
         std::views::transform([](const char* arg) -> std::string_view { return { arg }; }) |
         std::ranges::to<std::vector<std::string_view>>();
   return run(args);
