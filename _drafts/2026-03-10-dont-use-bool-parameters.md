@@ -6,7 +6,7 @@ categories: c++
 excerpt: "Raw bool flags make call sites opaque and error-prone. Strongly typed Yes/No enums keep intent explicit and let the compiler catch argument mix-ups."
 ---
 
-In every codebase I've ever worked on, I have seen something that looks like:
+In every codebase I've worked on, there has been this pattern:
 
 ```c++
     some_function(true, false, false, true, false);
@@ -130,5 +130,7 @@ But it helps prevent bugs and makes code maintenance easier.
 It also helps your friendly neighborhood LLM to get a little more context when inspecting your code.
 
 <!-- TODO (@carsonradtke): Mention the benefite that you can't pass VerboseTrace::Yes to an argument of type ShouldFailFast -->
+
+<!-- TODO (@carsonradtke): Show that this strongly-typed pattern does not hurt generated code -->
 
 *AI Disclaimer: The article was written by a human (me); AI generated the title and summary.*

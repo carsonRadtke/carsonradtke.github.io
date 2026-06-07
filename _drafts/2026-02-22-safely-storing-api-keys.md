@@ -13,3 +13,8 @@ excerpt: "TODO (@carsonradtke)"
 ### Local Filesystem
 
 ### Environment Variables
+
+
+TODO: arguments on the CLI are observable via top.
+arguments from environment variables are forwarded to child processes.
+How does `az login` securely authenticate?
