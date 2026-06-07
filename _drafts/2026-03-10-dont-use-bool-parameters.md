@@ -129,4 +129,6 @@ It is certainly less convenient and the DEFINE\_YNE certainly doesn't feel clean
 But it helps prevent bugs and makes code maintenance easier.
 It also helps your friendly neighborhood LLM to get a little more context when inspecting your code.
 
+<!-- TODO (@carsonradtke): Mention the benefite that you can't pass VerboseTrace::Yes to an argument of type ShouldFailFast -->
+
 *AI Disclaimer: The article was written by a human (me); AI generated the title and summary.*

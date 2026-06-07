@@ -34,7 +34,7 @@ Each message comes from somewhere -- either the user, the agent (assistant), a t
 
 ```python
 class AgenticActor:
-    _context: List[object]
+    _context: list[dict]
 
     # ...
 
@@ -51,7 +51,13 @@ class AgenticActor:
 ```
 
 To actually talk to the LLM, the ollama python api (ollama-python) is most convenient.
-<!-- TODO (@carsonradtke): instructions on getting ollama running -->
+
+<details>
+<summary>Ollama Side Quest</summary>
+
+<!-- TODO (@carsonradtke): Installing ollama. -->
+
+</details>
 
 ```python
 class AgenticActor:
@@ -69,7 +75,14 @@ class AgenticActor:
 That's all you need for a simple chat app!
 Here is a complete working example:
 
-<!-- TODO (@carsonradtke): Simple working example. -->
+<details>
+<summary>Basic Agent Example</summary>
+
+```python
+# TODO (@carsonradtke): simple working example
+```
+
+</details>
 
 ### Improving the Agentic Loop
 
@@ -88,6 +101,22 @@ A helpful agent needs to be able to do the following things:
 
 <!-- TODO (@carsonradtke): How are tools exposed to the agent? -->
 <!-- TODO (@carsonradtke): How are tools written? -->
+<!-- TODO (@carsonradtke): How does the agent invoke tools? -->
+
+#### Streaming Agent Responses
+
+In addition to the `tools` kwarg, we can also pass `strem=True`.
+This provides the model with a better user experience that helps the user see what is going on.
+
+<!-- TODO (@carsonradtke): how to stream chunks -->
+
+#### Reasoning Models
+
+Many new models, especially those capabale of tool calling, also have a reasoning mode.
+Reasoning, or "thinking", gives the model the ability to chain thoughts together and plan out tasks.
+This tends to improve agent answers and mitigate hallucinations.
+
+<!-- TODO (@carsonradtke): `thinking=True` + example -->
 
 ### Appendix
 
