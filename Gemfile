@@ -1,10 +1,9 @@
 source "https://rubygems.org"
 
 # Gems for minima:
-gem "minima", git: "https://github.com/jekyll/minima"
+gem "minima", "~> 2.5"
 
 # Gems for remote_theme:
-gem "jekyll-remote-theme"
+gem "jekyll-remote-theme", "~> 0.4.3"
 
-gem "jekyll"
-
+gem "jekyll", "~> 4.3.4"
